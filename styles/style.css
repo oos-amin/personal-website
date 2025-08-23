@@ -4,6 +4,17 @@
 ====================
 */
 
+:root {
+    --dark-color: #333333;
+    --dark-aqua: #0ABEAD;
+}
+
+/* 
+====================
+    My Reset 
+====================
+*/
+
 html {
     font-size: 10px;
 }
@@ -27,4 +38,53 @@ a {
 
 .container {
     position: relative;
+}
+
+/* 
+====================
+    Header 
+====================
+*/
+
+.header {
+    box-shadow: 0 12px 20px 0px rgba(4, 195, 255, 10%);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.nav__logo-link {
+    color: var(--dark-aqua);
+}
+
+.nav__logo {
+    font-size: 4.5rem;
+    font-family: "Poppins Black";
+}
+
+.nav__list {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.nav__item {
+    gap: 3.5rem;
+}
+
+.nav__link {
+    color: var(--dark-color);
+    font-family: "Poppins Medium";
+    transition: 0.2s;
+}
+
+.nav__link:hover {
+    color: var(--dark-aqua);
+}
+
+.nav__link--open {
+    color: var(--dark-aqua);
 }
