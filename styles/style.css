@@ -40,6 +40,16 @@ a {
     position: relative;
 }
 
+
+/* 
+====================
+    Helper Class 
+====================
+*/
+.hidden {
+    display: none;
+}
+
 /* 
 ====================
     Header 
@@ -69,6 +79,7 @@ a {
 .nav__list {
     display: flex;
     gap: 3.5rem;
+    z-index: 101;
 }
 
 /* .nav__item {} */
@@ -103,6 +114,7 @@ a {
     position: relative;
     cursor: pointer;
     display: none;
+    z-index: 101;
 }
 
 .nav__toggle-line,
