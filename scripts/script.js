@@ -8,3 +8,8 @@ menu.addEventListener('click', function () {
     menuList.classList.toggle('nav__list--open')
     overlay.classList.toggle('overlay--show');
 });
+
+overlay.addEventListener('click', function () {
+    menu.classList.remove('nav__toggle-icon--open');
+    menuList.classList.remove('nav__list--open')
+});
