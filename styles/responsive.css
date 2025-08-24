@@ -2,8 +2,34 @@
 
 @media (max-width: 1200px) {}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .nav__logo {
+        font-size: 3.9rem;
+    }
 
-@media (max-width: 768px) {}
+    .nav__list {
+        gap: 2.6rem;
+    }
+}
 
-@media (max-width: 576px) {}
+@media (max-width: 768px) {
+    .nav__logo {
+        font-size: 4rem;
+    }
+
+    .nav__toggle-icon {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .nav__toggle-icon {
+        display: flex;
+    }
+}
