@@ -10,6 +10,36 @@
     .nav__list {
         gap: 2.6rem;
     }
+
+    .home {
+        padding: 3.5rem 0;
+    }
+
+    .home .row {
+        flex-direction: column-reverse;
+    }
+
+    .home__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home__content-title {
+        font-size: 3.5rem;
+    }
+
+    .home__content-caption {
+        margin-bottom: 2rem;
+    }
+
+    .home__photo {
+        width: 33rem;
+        height: 33rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -65,5 +95,26 @@
 
     .nav__toggle-icon {
         display: flex;
+    }
+
+    .home__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__content-links {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .home__photo {
+        width: 100%;
+    }
+
+    .home__content-link {
+        width: 100%;
     }
 }
