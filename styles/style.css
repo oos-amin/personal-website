@@ -7,6 +7,7 @@
 :root {
     --dark-color: #333333;
     --dark-aqua: #0ABEAD;
+    --orange: #F57F17;
 }
 
 /* 
@@ -46,8 +47,30 @@ a {
     Helper Class 
 ====================
 */
+
 .hidden {
     display: none;
+}
+
+/* 
+====================
+    Component 
+====================
+*/
+
+.btns {
+    display: block;
+    width: 13.7rem;
+    height: 4.3rem;
+    background-color: var(--dark-aqua);
+    text-align: center;
+    line-height: 4.3rem;
+    border-radius: 5rem;
+    font-family: "Poppins SemiBold";
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0 0 20px 10px rgba(4, 195, 255, 10%);
+
 }
 
 /* 
@@ -148,4 +171,70 @@ a {
 
 .nav__toggle-icon--open .nav__toggle-line::after {
     transform: translateY(-1.1rem) rotate(-45deg);
+}
+
+/* 
+====================
+        Home 
+====================
+*/
+
+.home {
+    padding: 8rem 0;
+}
+
+.home__content {
+    width: 44rem;
+    margin: 0 auto;
+}
+
+.home__content-text {
+    font-family: "Poppins SemiBold";
+    color: var(--dark-aqua);
+    font-size: 2.2rem;
+}
+
+.home__content-text span {
+    color: var(--orange);
+}
+
+.home__content-title {
+    font-family: 'Poppins Bold';
+    color: var(--dark-aqua);
+    font-size: 4.5rem;
+    margin: 1.5rem 0;
+}
+
+.home__content-caption {
+    font-family: "Poppins Regular";
+    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+    color: rgba(51, 51, 51, 71%);
+}
+
+.home__content-links {
+    width: 35rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.home__content-link:last-child {
+    background-color: var(--orange);
+    box-shadow: 0 0 20px 10px rgba(255, 75, 4, 0.1);
+
+}
+
+/* .home__content-link {} */
+
+.home__photo {
+    width: 40rem;
+    height: 40rem;
+    background: url('../images/header-avatar.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    border: solid 1.5rem #ffffff;
+    box-shadow: 0 0 20px 10px rgba(4, 195, 255, 10%);
+
 }
