@@ -11,5 +11,6 @@ menu.addEventListener('click', function () {
 
 overlay.addEventListener('click', function () {
     menu.classList.remove('nav__toggle-icon--open');
-    menuList.classList.remove('nav__list--open')
+    menuList.classList.remove('nav__list--open');
+    overlay.classList.remove('overlay--show');
 });
