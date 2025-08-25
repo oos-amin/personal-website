@@ -40,6 +40,10 @@
         margin: 0 auto;
         margin-bottom: 3rem;
     }
+
+    .home__shape {
+        top: 68rem
+    }
 }
 
 @media (max-width: 768px) {
@@ -74,7 +78,7 @@
 
     .overlay {
         position: fixed;
-        top: 10.3rem;
+        top: 10.1rem;
         left: 0;
         right: 0;
         bottom: 0;
@@ -116,5 +120,9 @@
 
     .home__content-link {
         width: 100%;
+    }
+
+    .home__shape {
+        display: none;
     }
 }
