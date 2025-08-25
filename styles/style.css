@@ -67,11 +67,8 @@ a {
     padding: 2.5rem 0;
 }
 
-.nav__logo-link {
-    color: var(--dark-aqua);
-}
-
 .nav__logo {
+    color: var(--dark-aqua);
     font-size: 4.5rem;
     font-family: "Poppins Black";
 }
