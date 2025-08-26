@@ -73,6 +73,45 @@ a {
 
 }
 
+/* ------ Section Head ------ */
+
+.section-head {
+    padding: 6rem 0;
+    text-align: center;
+    color: var(--dark-aqua);
+}
+
+.section-head__title {
+    font-family: "Poppins Bold";
+    font-size: 4rem;
+}
+
+.section-head__caption {
+    letter-spacing: 0.2rem;
+}
+
+.section-head__underline {
+    width: 25rem;
+    height: 0.3rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    background-color: var(--dark-aqua);
+    position: relative;
+}
+
+.section-head__underline-shape {
+    width: 3.5rem;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.3rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: var(--dark-aqua);
+}
+
+
 /* 
 ====================
     Header 
@@ -180,7 +219,7 @@ a {
 */
 
 .home {
-    padding: 8rem 0;
+    padding: 10rem 0;
 }
 
 .home__content {
@@ -241,9 +280,16 @@ a {
 
 .home__shape {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     background: url('../images/shapes/home-shape.svg') no-repeat;
     background-position: center;
-    position: absolute;
-    top: 52rem;
+
 }
+
+/* 
+====================
+       About 
+====================
+*/
+
+.about {}
