@@ -128,6 +128,11 @@ a {
 
 .header {
     box-shadow: 0 12px 20px 0px rgba(4, 195, 255, 10%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 102;
+    background-color: #fff;
 }
 
 .nav {
@@ -226,7 +231,7 @@ a {
 */
 
 .home {
-    padding: 10rem 0;
+    padding-top: 13rem;
 }
 
 .home__content {
