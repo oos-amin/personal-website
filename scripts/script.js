@@ -2,15 +2,28 @@
 const menu = document.querySelector('.nav__toggle-icon');
 const menuList = document.querySelector('.nav__list');
 const overlay = document.querySelector('.overlay');
+const body = document.body;
 
 menu.addEventListener('click', function () {
     menu.classList.toggle('nav__toggle-icon--open');
     menuList.classList.toggle('nav__list--open')
     overlay.classList.toggle('overlay--show');
+
+    if (menu.classList.contains('nav__toggle-icon--open')) {
+        body.classList.add('no-scroll');
+    } else {
+        body.classList.remove('no-scroll')
+    }
 });
 
 overlay.addEventListener('click', function () {
     menu.classList.remove('nav__toggle-icon--open');
     menuList.classList.remove('nav__list--open');
     overlay.classList.remove('overlay--show');
+
+    if (menu.classList.contains('nav__toggle-icon--open')) {
+        body.classList.add('no-scroll');
+    } else {
+        body.classList.remove('no-scroll')
+    }
 });
