@@ -1,6 +1,27 @@
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .services-box {
+        padding: 6rem 4rem;
 
-@media (max-width: 1200px) {}
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-box {
+        padding: 4rem 2rem;
+    }
+
+    .services-box__img {
+        width: 25%;
+    }
+
+    .services-box__title {
+        font-size: 1.7rem;
+    }
+
+    .services-box__caption {
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width: 992px) {
     .nav__logo {
@@ -89,6 +110,9 @@
         z-index: 100;
     }
 
+    .services-box__img {
+        width: 15%;
+    }
 
 }
 
