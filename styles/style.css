@@ -231,7 +231,7 @@ a {
 */
 
 .home {
-    padding-top: 20rem;
+    padding-top: 19rem;
 }
 
 .home__content {
@@ -387,7 +387,7 @@ a {
     padding: 6rem 0;
 }
 
-.services-wrapper {}
+/* .services-wrapper {} */
 
 .services-box {
     display: flex;
