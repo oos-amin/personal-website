@@ -42,7 +42,6 @@ a {
     position: relative;
 }
 
-
 /* 
 ====================
     Helper Class 
@@ -56,6 +55,10 @@ a {
 .no-scroll {
     overflow: hidden;
     height: 100vh;
+}
+
+.skew-full {
+    transform: skewY(5deg);
 }
 
 /* 
@@ -82,7 +85,7 @@ a {
 /* ------ Section Head ------ */
 
 .section-head {
-    padding: 6rem 0;
+    padding: 4rem 0;
     text-align: center;
     color: var(--dark-aqua);
 }
@@ -349,7 +352,6 @@ a {
     margin-left: 3rem;
 }
 
-
 .about-list__item {
     position: relative;
 }
@@ -390,6 +392,7 @@ a {
 /* .services-wrapper {} */
 
 .services-box {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -433,4 +436,166 @@ a {
 .services-box__caption {
     color: #fff;
     text-align: center;
+}
+
+/* 
+====================
+       Resume
+====================
+*/
+
+.resume {
+    margin: 18rem 0;
+    padding: 9rem 0;
+    transform: skewY(-5deg);
+    box-shadow: 0 0 20px 10px rgba(4, 255, 242, 0.1);
+}
+
+.resume-content {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+/* ---Resume Left--- */
+
+.resume-left {
+    background-color: lightpink;
+    min-height: 45rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 10px rgba(4, 195, 255, 10%);
+    position: relative;
+    padding: 4.5rem 0;
+    z-index: 5;
+
+}
+
+.resume-left::before {
+    content: "";
+    background-color: var(--dark-aqua);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4.5rem;
+}
+
+.resume-left__list {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: "Poppins SemiBold";
+    font-size: 1.8rem;
+    padding-top: 2rem;
+}
+
+.resume-left__item {
+    margin-bottom: 1rem;
+    padding: 1.5rem 0;
+    padding-left: 1rem;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.resume-left__item:hover {
+    text-decoration: underline;
+}
+
+.resume-left__svg {
+    margin: 0 2rem;
+}
+
+.resume-left__item:last-child {
+    margin-bottom: 0;
+}
+
+.resume-left__item::before {
+    content: "";
+    background-color: var(--dark-aqua);
+    width: 5.5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    z-index: -1;
+    position: absolute;
+    max-width: 28rem;
+    transition: 0.4s;
+}
+
+.resume-left__item--active {
+    color: #fff;
+}
+
+.resume-left__item--active::before {
+    width: 100%;
+}
+
+.resume-left__text {
+    margin-left: 0.8rem;
+}
+
+/* ---Resume Right--- */
+
+/* .resmue-right {} */
+
+.resmue-right__content {
+    padding-left: 3rem;
+    border-left: solid 3px var(--dark-aqua);
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.2s;
+
+}
+
+.resmue-right__content--show {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+
+}
+
+.resume-right__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.resume-right__title {
+    color: #FF5823;
+    font-family: "Poppins SemiBold";
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.resume-right__title::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--dark-aqua);
+    position: absolute;
+    border-radius: 100%;
+    left: -4rem;
+}
+
+.resume-right__date {
+    background-color: var(--orange);
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    color: #fff;
+    box-shadow: 0 0 20px 10px rgba(255, 100, 4, 0.1);
+}
+
+
+.resume-right__subtitle {
+    font-family: "Poppins SemiBold";
+    font-size: 1.6rem;
+    margin: 0.8rem 0 1rem 0;
+}
+
+.resume-right__caption {
+    color: var(--gray-color);
+    margin-bottom: 2.5rem;
 }
