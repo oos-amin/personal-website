@@ -98,9 +98,13 @@
     .resume-left__item {
         display: block;
         padding: 1.5rem 2rem;
-        transition: 0.2s;
+        transition: 0.1s;
         display: flex;
         align-items: center;
+    }
+
+    .resume-left__item:hover {
+        text-decoration: none;
     }
 
     .resume-left__item--active {
