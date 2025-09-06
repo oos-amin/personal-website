@@ -213,6 +213,13 @@
         padding: 2.5rem;
     }
 
+    .portfolio-list__item {
+        padding: 1rem 2.5rem;
+    }
+
+    .portfolio-photos__img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 376px) {
@@ -263,7 +270,4 @@
         font-size: 1.7rem;
     }
 
-    .portfolio-photos__img {
-        width: 100%;
-    }
 }
