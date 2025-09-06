@@ -6,6 +6,7 @@ const menuList = document.querySelector('.nav__list');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 const resumeItems = document.querySelectorAll('.resume-left__item');
+const portfolioItems = document.querySelectorAll('.portfolio-list__item');
 
 // Add click event to menu icon
 menu.addEventListener('click', function () {
@@ -47,3 +48,15 @@ for (let i = 0; i < resumeItems.length; i++) {
         document.querySelector(contentId).classList.add('resmue-right__content--show')
     });
 }
+
+// Add click event to Portfolio items
+for (let i = 0; i < portfolioItems.length; i++) {
+    portfolioItems[i].addEventListener('click', function () {
+        document.querySelector('.portfolio-list__item--active').classList.remove('portfolio-list__item--active');
+        document.querySelector('.portfolio-photos__sample--show').classList.remove('portfolio-photos__sample--show');
+
+        portfolioItems[i].classList.add('portfolio-list__item--active');
+        let portfolioId = portfolioItems[i].getAttribute('portfolio-id');
+        document.querySelector(portfolioId).classList.add('portfolio-photos__sample--show');
+    })
+};
