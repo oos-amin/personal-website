@@ -599,3 +599,67 @@ a {
     color: var(--gray-color);
     margin-bottom: 2.5rem;
 }
+
+/* 
+====================
+      Portfolio 
+====================
+*/
+
+/* Items */
+
+.portfolio {
+    padding: 3rem 0;
+}
+
+.portfolio-content {}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.portfolio-list__item {
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.portfolio-list__item--active {
+    background-color: var(--dark-aqua);
+    color: #fff;
+    transition: 0.2s;
+
+}
+
+
+
+/* Photos */
+
+.portfolio-photos {}
+
+.portfolio-photos__sample {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    height: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.portfolio-photos__sample--show {
+    height: auto;
+    opacity: 1;
+}
+
+.portfolio-photos__img {
+    width: 35rem;
+    height: 100%;
+}
