@@ -53,10 +53,10 @@ for (let i = 0; i < resumeItems.length; i++) {
 for (let i = 0; i < portfolioItems.length; i++) {
     portfolioItems[i].addEventListener('click', function () {
         document.querySelector('.portfolio-list__item--active').classList.remove('portfolio-list__item--active');
-        document.querySelector('.portfolio-photos__sample--show').classList.remove('portfolio-photos__sample--show');
+        document.querySelector('.portfolio-content--active').classList.remove('portfolio-content--active');
 
         portfolioItems[i].classList.add('portfolio-list__item--active');
         let portfolioId = portfolioItems[i].getAttribute('portfolio-id');
-        document.querySelector(portfolioId).classList.add('portfolio-photos__sample--show');
+        document.querySelector(portfolioId).classList.add('portfolio-content--active');
     })
 };

@@ -120,10 +120,6 @@
     .resume-right__date {
         margin: 0.8rem 0;
     }
-
-    .portfolio-photos__img {
-        width: 45rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -215,10 +211,6 @@
 
     .portfolio-list__item {
         padding: 1rem 2.5rem;
-    }
-
-    .portfolio-photos__img {
-        width: 100%;
     }
 }
 
