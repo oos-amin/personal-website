@@ -509,6 +509,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="illustraion">
@@ -523,8 +525,16 @@
                             <div class="swiper-slide">
                                 <img src="images/portfolio-2.jpg" class="portfolio-content__img" alt="Portfolio Image">
                             </div>
+                            <div class="swiper-slide">
+                                <img src="images/portfolio-2.jpg" class="portfolio-content__img" alt="Portfolio Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/portfolio-2.jpg" class="portfolio-content__img" alt="Portfolio Image">
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="animation">
@@ -548,6 +558,8 @@
 
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="app-ui">
@@ -568,6 +580,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="web-ui">
@@ -593,6 +607,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="social-media">
@@ -615,6 +631,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="print-design">
@@ -637,6 +655,8 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
 
@@ -653,8 +673,18 @@
     <script src="scripts/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
+            grabCursor: true,
+            autoplay: {
+                delay: 3000,
+                disableInInteraction: false,
+            },
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             breakpoints: {
                 768: {
