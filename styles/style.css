@@ -834,3 +834,45 @@ a {
     border: none;
     width: 100%;
 }
+
+/* 
+====================
+      Footer 
+====================
+*/
+
+.footer {
+    padding: 3rem 0 1.5rem 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-family: "Poppins SemiBold";
+    color: var(--dark-color);
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-media__icons {
+    background-color: var(--dark-color);
+    fill: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.social-media__icons:hover {
+    background-color: var(--dark-aqua);
+}
