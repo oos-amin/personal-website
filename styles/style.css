@@ -764,3 +764,73 @@ a {
     color: var(--dark-aqua) !important;
     border-radius: 0.5rem !important;
 }
+
+/* 
+====================
+    Contact Us 
+====================
+*/
+
+/* .contact-us {} */
+
+.contact-form__wrapper {
+    background: url('../images/map.jpg') no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.map-circle {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 40%;
+    box-shadow: 0 0 10px 10px rgb(31, 222, 236, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-from {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    padding: 3.5rem 5rem;
+    box-shadow: -1px -2px 20px 11px rgba(4, 195, 255, 10%);
+    margin: 4rem 0;
+    margin-left: auto;
+    background-color: #fff;
+}
+
+.contact-form__title {
+    font-family: "Poppins Bold";
+    color: var(--dark-aqua);
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-form__input {
+    border: none;
+    box-shadow: -1px -2px 20px 11px rgba(4, 195, 255, 10%);
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form__textarea {
+    border: none;
+    padding: 1rem 2rem;
+    box-shadow: -1px -2px 20px 11px rgba(4, 195, 255, 10%);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+.contact-form__submit {
+    border: none;
+    width: 100%;
+}

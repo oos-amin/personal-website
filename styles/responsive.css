@@ -120,6 +120,14 @@
     .resume-right__date {
         margin: 0.8rem 0;
     }
+
+    .map-circle {
+        display: none;
+    }
+
+    .contact-from {
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -212,6 +220,10 @@
     .portfolio-list__item {
         padding: 1rem 2.5rem;
     }
+
+    .contact-from {
+        padding: 4rem 3.5rem;
+    }
 }
 
 @media (max-width: 376px) {
@@ -262,4 +274,7 @@
         font-size: 1.7rem;
     }
 
+    .contact-from {
+        padding: 4rem 1.8rem;
+    }
 }
