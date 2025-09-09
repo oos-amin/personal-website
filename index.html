@@ -487,7 +487,7 @@
 
                 <!-- Content -->
                 <div class="portfolio-content portfolio-content--active" id="all-work">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-1.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -509,12 +509,10 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="illustraion">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-1.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -533,12 +531,10 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="animation">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-3.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -558,12 +554,10 @@
 
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="app-ui">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-1.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -580,12 +574,10 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="web-ui">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-1.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -607,12 +599,10 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="social-media">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-2.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -631,12 +621,10 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="portfolio-content" id="print-design">
-                    <div class="swiper">
+                    <div class="swiper section-1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/portfolio-1.jpg" class="portfolio-content__img" alt="Portfolio Image">
@@ -655,8 +643,6 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
 
@@ -679,7 +665,7 @@
 
                 <!-- Pricing Box -->
 
-                <div class="swiper">
+                <div class="swiper section-2">
                     <div class="pricing-box__wrapper swiper-wrapper">
 
                         <div class="pricing-box swiper-slide">
@@ -802,20 +788,35 @@
     <script src="scripts/script.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            loop: true,
+        const swiper1 = new Swiper('.section-1', {
             grabCursor: true,
             autoplay: {
-                delay: 3000,
+                delay: 5000,
                 disableInInteraction: false,
             },
             pagination: {
-                el: '.swiper-pagination',
+                el: '.section-1 .swiper-pagination',
                 clickable: true,
             },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+
+                }
+            }
+
+        });
+
+        const swiper2 = new Swiper('.section-2', {
+            grabCursor: true,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.section-2 .swiper-button-next',
+                prevEl: '.section-2 .swiper-button-prev',
             },
             breakpoints: {
                 768: {
