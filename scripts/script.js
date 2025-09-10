@@ -3,6 +3,7 @@
 // Select DOM elements
 const menu = document.querySelector('.nav__toggle-icon');
 const menuList = document.querySelector('.nav__list');
+const navItems = document.querySelectorAll('.nav__item');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 const resumeItems = document.querySelectorAll('.resume-left__item');
@@ -21,6 +22,15 @@ menu.addEventListener('click', function () {
         body.classList.remove('no-scroll');
     }
 });
+
+//Add click event to menu items
+for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', function () {
+        document.querySelector('.nav__item--open').classList.remove('nav__item--open');
+        this.classList.add('nav__item--open');
+    })
+};
+
 
 // Add click event to overlay
 overlay.addEventListener('click', function () {

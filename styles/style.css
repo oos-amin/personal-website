@@ -31,7 +31,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Poppins Regular";
+    font-family: "Poppins Regular", sans-serif;
 }
 
 a {
@@ -157,10 +157,13 @@ a {
     z-index: 101;
 }
 
-/* .nav__item {} */
+.nav__item {
+    color: var(--dark-color);
+
+}
 
 .nav__link {
-    color: var(--dark-color);
+    color: inherit;
     font-family: "Poppins Medium";
     transition: 0.2s;
 }
@@ -169,7 +172,7 @@ a {
     color: var(--dark-aqua);
 }
 
-.nav__link--open {
+.nav__item--open {
     color: var(--dark-aqua);
 }
 
@@ -308,7 +311,7 @@ a {
 */
 
 .about {
-    padding: 6rem 0;
+    padding: 9rem 0;
 }
 
 .about-wrapper {
@@ -386,7 +389,8 @@ a {
 */
 
 .services {
-    padding: 6rem 0;
+    padding: 9rem 0;
+
 }
 
 /* .services-wrapper {} */
@@ -445,7 +449,6 @@ a {
 */
 
 .resume {
-    margin: 10rem 0;
     padding: 9rem 0;
     transform: skewY(-5deg);
     box-shadow: 0 0 20px 10px rgba(4, 255, 242, 0.1);
@@ -609,7 +612,7 @@ a {
 /* Items */
 
 .portfolio {
-    padding: 3rem 0;
+    padding: 9rem 0;
 }
 
 /* .portfolio-content {} */
@@ -683,10 +686,9 @@ a {
 */
 
 .pricing {
+    padding: 9rem 0;
     transform: skewY(-5deg);
     box-shadow: 0 0 20px 10px rgba(4, 255, 242, 0.1);
-    margin: 10rem 0;
-    padding: 10rem 0;
 }
 
 .pricing .swiper {
@@ -771,13 +773,15 @@ a {
 ====================
 */
 
-/* .contact-us {} */
+.contact-us {
+    padding: 9rem 0;
+}
 
 .contact-form__wrapper {
     background: url('../images/map.jpg') no-repeat;
     background-size: cover;
     background-position: left;
-    padding: 0.5rem 0;
+    padding-top: 9rem;
     position: relative;
 }
 
