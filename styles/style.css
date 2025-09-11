@@ -212,6 +212,7 @@ a {
     gap: 3.5rem;
     z-index: 101;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .nav__item {
@@ -854,9 +855,8 @@ a {
     background: url('../images/map.jpg') no-repeat;
     background-size: cover;
     background-position: left;
-    padding-top: 9rem;
     position: relative;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 .map-circle {

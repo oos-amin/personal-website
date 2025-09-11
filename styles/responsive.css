@@ -75,6 +75,7 @@
     .resume-left {
         box-shadow: none;
         min-height: auto;
+        background-color: transparent;
     }
 
     .resume-left::before {
