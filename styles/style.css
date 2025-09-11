@@ -1,14 +1,40 @@
 /* 
-====================
-    My Reset 
-====================
+=====================
+   Variable Colors 
+=====================
 */
 
 :root {
+    --primary-color: #ffffff;
+    --secondry-color: #ffffff;
     --dark-color: #333333;
     --dark-aqua: #0ABEAD;
     --orange: #F57F17;
     --gray-color: rgba(51, 51, 51, 71%);
+}
+
+:root.dark-theme {
+    --primary-color: #161D26;
+    --secondry-color: #1F2935;
+    --gray-color: #95A5C6;
+    --dark-color: #95A5C6;
+}
+
+:root.dark-theme body {
+    --primary-color: #161D26;
+}
+
+:root.dark-theme .header,
+:root.dark-theme .home__photo,
+:root.dark-theme .about-wrapper,
+:root.dark-theme .resume,
+:root.dark-theme .resume-left,
+:root.dark-theme .pricing .swiper,
+:root.dark-theme .pricing,
+:root.dark-theme .pricing-box,
+:root.dark-theme .contact-form__input,
+:root.dark-theme .contact-form__textarea {
+    box-shadow: none;
 }
 
 /* 
@@ -32,6 +58,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins Regular", sans-serif;
+    background-color: var(--primary-color);
 }
 
 a {
@@ -58,7 +85,7 @@ a {
 }
 
 .skew-full {
-    transform: skewY(5deg);
+    transform: skewY(4deg);
 }
 
 /* 
@@ -135,7 +162,7 @@ a {
     left: 0;
     right: 0;
     z-index: 102;
-    background-color: #fff;
+    background-color: var(--secondry-color);
 }
 
 .nav {
@@ -145,16 +172,46 @@ a {
     padding: 2rem 0;
 }
 
+.nav__actions {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
 .nav__logo {
     color: var(--dark-aqua);
     font-size: 4.5rem;
     font-family: "Poppins Black";
 }
 
+.nav__btn {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--dark-aqua);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* .nav__btn-svg {} */
+
+.nav__btn-svg--disable {
+    display: none;
+
+}
+
+.nav__btn:hover {
+    background-color: var(--dark-color);
+}
+
 .nav__list {
     display: flex;
     gap: 3.5rem;
     z-index: 101;
+    align-items: center;
 }
 
 .nav__item {
@@ -238,6 +295,7 @@ a {
 
 .home {
     padding-top: 19rem;
+    background-color: var(--primary-color);
 }
 
 .home__content {
@@ -266,7 +324,7 @@ a {
     font-family: "Poppins Regular";
     font-size: 1.3rem;
     margin-bottom: 3.5rem;
-    color: rgba(51, 51, 51, 71%);
+    color: var(--gray-color);
 }
 
 .home__content-links {
@@ -312,9 +370,11 @@ a {
 
 .about {
     padding: 9rem 0;
+    background-color: var(--primary-color);
 }
 
 .about-wrapper {
+    background-color: var(--secondry-color);
     box-shadow: 0 0 20px 10px rgba(4, 195, 255, 10%);
     margin: 0 0.8rem 0 0.8rem;
 }
@@ -334,12 +394,14 @@ a {
 }
 
 .about-wrapper__title {
+    color: var(--dark-color);
     font-family: "Poppins SemiBold";
     font-size: 2.5rem;
 }
 
 .about-wrapper__description {
     margin: 2rem 0 7rem 0;
+    color: var(--dark-color);
 }
 
 .about-list__title {
@@ -390,6 +452,7 @@ a {
 
 .services {
     padding: 9rem 0;
+    background-color: var(--primary-color);
 
 }
 
@@ -450,8 +513,9 @@ a {
 
 .resume {
     padding: 9rem 0;
-    transform: skewY(-5deg);
+    transform: skewY(-4deg);
     box-shadow: 0 0 20px 10px rgba(4, 255, 242, 0.1);
+    background-color: var(--secondry-color);
 }
 
 .resume-content {
@@ -462,9 +526,8 @@ a {
 /* ---Resume Left--- */
 
 .resume-left {
-    background-color: lightpink;
+    background-color: var(--primary-color);
     min-height: 45rem;
-    background-color: #ffffff;
     box-shadow: 0 0 20px 10px rgba(4, 195, 255, 10%);
     position: relative;
     padding: 4.5rem 0;
@@ -492,6 +555,8 @@ a {
 }
 
 .resume-left__item {
+    color: var(--dark-color);
+
     margin-bottom: 1rem;
     padding: 1.5rem 0;
     padding-left: 1rem;
@@ -524,6 +589,7 @@ a {
     position: absolute;
     max-width: 28rem;
     transition: 0.4s;
+
 }
 
 .resume-left__item--active {
@@ -593,6 +659,7 @@ a {
 
 
 .resume-right__subtitle {
+    color: var(--dark-color);
     font-family: "Poppins SemiBold";
     font-size: 1.6rem;
     margin: 0.8rem 0 1rem 0;
@@ -613,6 +680,8 @@ a {
 
 .portfolio {
     padding: 9rem 0;
+    background-color: var(--primary-color);
+
 }
 
 /* .portfolio-content {} */
@@ -626,6 +695,7 @@ a {
 }
 
 .portfolio-list__item {
+    color: var(--dark-color);
     border-radius: 5rem;
     padding: 1rem 3rem;
     display: flex;
@@ -687,8 +757,9 @@ a {
 
 .pricing {
     padding: 9rem 0;
-    transform: skewY(-5deg);
+    transform: skewY(-4deg);
     box-shadow: 0 0 20px 10px rgba(4, 255, 242, 0.1);
+    background-color: var(--secondry-color);
 }
 
 .pricing .swiper {
@@ -696,6 +767,7 @@ a {
 }
 
 .pricing-box {
+    background-color: var(--primary-color);
     height: 100%;
     box-shadow: 0 0 5px 2.5px rgb(31, 222, 236, 10%);
 }
@@ -775,6 +847,7 @@ a {
 
 .contact-us {
     padding: 9rem 0;
+    background-color: var(--primary-color);
 }
 
 .contact-form__wrapper {
@@ -783,6 +856,7 @@ a {
     background-position: left;
     padding-top: 9rem;
     position: relative;
+    padding: 5rem;
 }
 
 .map-circle {
@@ -807,7 +881,8 @@ a {
     box-shadow: -1px -2px 20px 11px rgba(4, 195, 255, 10%);
     margin: 4rem 0;
     margin-left: auto;
-    background-color: #fff;
+    background-color: var(--secondry-color);
+
 }
 
 .contact-form__title {
@@ -818,6 +893,7 @@ a {
 }
 
 .contact-form__input {
+    background-color: var(--primary-color);
     border: none;
     box-shadow: -1px -2px 20px 11px rgba(4, 195, 255, 10%);
     margin-bottom: 1.5rem;
@@ -832,6 +908,7 @@ a {
     margin-bottom: 2rem;
     border-radius: 0.5rem;
     resize: none;
+    background-color: var(--primary-color);
 }
 
 .contact-form__submit {
@@ -846,7 +923,8 @@ a {
 */
 
 .footer {
-    padding: 3rem 0 1.5rem 0;
+    padding: 1rem 0 1.5rem 0;
+    background-color: var(--primary-color);
 }
 
 .footer-wrapper {
@@ -869,7 +947,7 @@ a {
 }
 
 .social-media__icons {
-    background-color: var(--dark-color);
+    background-color: var(--dark-aqua);
     fill: #fff;
     border-radius: 2rem;
     padding: 0.6rem;
@@ -878,5 +956,5 @@ a {
 }
 
 .social-media__icons:hover {
-    background-color: var(--dark-aqua);
+    background-color: var(--dark-color);
 }

@@ -4,6 +4,8 @@
 const menu = document.querySelector('.nav__toggle-icon');
 const menuList = document.querySelector('.nav__list');
 const navItems = document.querySelectorAll('.nav__item');
+const changeThemeBtn = document.querySelector('.nav__btn');
+const themeSVG = document.querySelectorAll('.nav__btn-svg');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 const resumeItems = document.querySelectorAll('.resume-left__item');
@@ -31,6 +33,19 @@ for (let i = 0; i < navItems.length; i++) {
     })
 };
 
+// Add click event to change theme button
+changeThemeBtn.addEventListener('click', function () {
+    document.documentElement.classList.toggle('dark-theme');
+    for (let i = 0; i < themeSVG.length; i++) {
+        if (document.documentElement.classList.contains('dark-theme')) {
+            document.querySelector('.nav__btn-svg').classList.add('nav__btn-svg--disable');
+            themeSVG[i].classList.remove('nav__btn-svg--disable')
+        } else {
+            document.querySelector('.nav__btn-svg').classList.remove('nav__btn-svg--disable');
+            themeSVG[i].classList.add('nav__btn-svg--disable')
+        }
+    }
+});
 
 // Add click event to overlay
 overlay.addEventListener('click', function () {

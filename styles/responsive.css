@@ -39,7 +39,7 @@
     }
 
     .nav__list {
-        gap: 2.6rem;
+        gap: 1.6rem;
     }
 
     .home .row {
@@ -152,7 +152,9 @@
         justify-content: center;
         height: 0;
         overflow: hidden;
+        background-color: var(--secondry-color);
         transition: 0.20s;
+        gap: 2.6rem;
     }
 
     .nav__list--open {
