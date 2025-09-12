@@ -106,7 +106,12 @@ a {
     color: #fff;
     font-size: 1.2rem;
     box-shadow: 0 0 20px 10px rgba(4, 195, 255, 10%);
+    transition: 0.3s;
 
+}
+
+.btns:hover {
+    transform: scale(1.03);
 }
 
 /* ------ Section Head ------ */
@@ -338,8 +343,8 @@ a {
 .home__content-link:last-child {
     background-color: var(--orange);
     box-shadow: 0 0 20px 10px rgba(255, 75, 4, 0.1);
-
 }
+
 
 /* .home__content-link {} */
 
@@ -465,7 +470,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6.5rem 4rem
+    padding: 6.5rem 4rem;
+    transition: 0.3s;
+}
+
+.services-box:hover {
+    transform: scale(1.03);
+
 }
 
 .services-box--purple {
